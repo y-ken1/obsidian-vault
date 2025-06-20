@@ -17,7 +17,14 @@
   "statusBar": [],
   "pageHeader": [],
   "macros": [],
-  "explorer": [],
+  "explorer": [
+    {
+      "id": "templater-obsidian:create-Templater-Plugin/tm_make_file.md",
+      "icon": "lucide-file-plus-2",
+      "name": "Templater: Create Templater-Plugin/tm_make_file.md",
+      "mode": "any"
+    }
+  ],
   "hide": {
     "statusbar": [],
     "leftRibbon": []
