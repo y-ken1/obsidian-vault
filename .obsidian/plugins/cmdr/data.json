@@ -9,15 +9,7 @@
       "id": "templater-obsidian:create-Templater-Plugin/tm_make_file.md",
       "icon": "lucide-file-plus-2",
       "name": "Templater: Create Templater-Plugin/tm_make_file.md",
-      "mode": "any",
-      "color": "#62d064"
-    },
-    {
-      "id": "obsidian-git:push",
-      "icon": "lucide-upload",
-      "name": "Git: Commit-and-sync",
-      "mode": "any",
-      "color": "#e86969"
+      "mode": "any"
     }
   ],
   "rightRibbon": [],
@@ -25,7 +17,20 @@
   "statusBar": [],
   "pageHeader": [],
   "macros": [],
-  "explorer": [],
+  "explorer": [
+    {
+      "id": "templater-obsidian:create-Templater-Plugin/tm_make_file.md",
+      "icon": "lucide-file-plus-2",
+      "name": "Templater: Create Templater-Plugin/tm_make_file.md",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-git:push",
+      "icon": "lucide-upload",
+      "name": "git commit ",
+      "mode": "any"
+    }
+  ],
   "hide": {
     "statusbar": [],
     "leftRibbon": []
