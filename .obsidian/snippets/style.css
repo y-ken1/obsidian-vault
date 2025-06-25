@@ -1,0 +1,79 @@
+/* git no commit file count */
+div.status-bar
+  > div.status-bar-item.plugin-obsidian-git.obsidian-git-statusbar-idle.obsidian-git-statusbar-status
+  > div:nth-child(3) {
+  color: orange;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  border: #aaa 1px solid;
+  padding: 2px;
+}
+
+/* タイトルを小さめで右寄せ */
+.inline-title {
+  font-size: 1rem !important;
+  color: gray;
+  opacity: 0.75;
+  text-align: right;
+}
+
+/* タスクのファイルリンクの文字を小さくなど目立たなくする */
+.contains-task-list {
+  .task-description {
+    font-size: 1rem;
+    color: rgb(193, 142, 167);
+  }
+
+  .tasks-backlink a {
+    font-size: 0.7em;
+    filter: grayscale(60%);
+    display: inline-block;
+    width: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    color: transparent;
+    text-decoration: none !important;
+  }
+
+  .tasks-backlink a::before {
+    content: "Link";
+    color: #fff;
+    text-decoration: none !important;
+  }
+
+  .task-extras .tasks-edit {
+    display: none;
+  }
+
+  .task-start,
+  .task-due,
+  .task-scheduled {
+    display: none;
+  }
+}
+
+/* 終了タスクの */
+.contains-task-list:has(.is-checked) {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0;
+  .tasks-list-text {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .task-done {
+    font-size: 0.6rem;
+    color: #fff;
+    opacity: 0.45;
+  }
+  .task-description {
+    font-size: 0.85rem;
+    color: rgb(191, 205, 227);
+  }
+  .task-list-item-checkbox {
+    background-color: rgb(191, 205, 227);
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "templater-obsidian:create-Templater-Plugin/tm_make_file.md",
+      "icon": "lucide-file-plus-2",
+      "name": "Templater: Create Templater-Plugin/tm_make_file.md",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-git:pull",
+      "icon": "lucide-file-down",
+      "name": "Git: Pull",
+      "mode": "any"
+    },
+    {
+      "id": "dataview:dataview-force-refresh-views",
+      "icon": "lucide-building-2",
+      "name": "Dataview: Force refresh all views and blocks",
+      "mode": "any"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [],
+  "macros": [],
+  "explorer": [
+    {
+      "id": "templater-obsidian:create-Templater-Plugin/tm_make_file.md",
+      "icon": "lucide-file-plus-2",
+      "name": "Templater: Create Templater-Plugin/tm_make_file.md",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-git:push",
+      "icon": "lucide-upload",
+      "name": "git commit ",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-git:pull",
+      "icon": "lucide-download",
+      "name": "Git: Pull",
+      "mode": "any"
+    }
+  ],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": [
+      "グラフビューを開く",
+      "新規キャンバスを作成",
+      "今日のデイリーノートを開く",
+      "テンプレートを挿入",
+      "クイックスイッチャーを開く",
+      "ワークスペースレイアウトを管理"
+    ]
+  },
+  "spacing": "8",
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 2,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": true,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}
