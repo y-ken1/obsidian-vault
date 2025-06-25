@@ -18,9 +18,9 @@
       "mode": "any"
     },
     {
-      "id": "dataview:dataview-force-refresh-views",
-      "icon": "lucide-building-2",
-      "name": "Dataview: Force refresh all views and blocks",
+      "id": "app:reload",
+      "icon": "lucide-rotate-ccw",
+      "name": "保存せずにアプリをリロード",
       "mode": "any"
     }
   ],
