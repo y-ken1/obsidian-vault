@@ -47,12 +47,30 @@ div.status-bar
 
   .task-start,
   .task-due,
-  .task-scheduled {
+  .task-scheduled,
+  .tasks-postpone {
     display: none;
   }
 }
 
-/* 終了タスクの */
+/* TODO未済の場合、予定日を表示する */
+/* クラス.todo-listをつけた要素を書いてhasでできた */
+.view-content:has(.todo-list) {
+  .task-due {
+    display: inline;
+    font-size: 0.75rem;
+  }
+  /* 済は薄く */
+  div.cm-contentContainer
+    > div
+    > div:nth-child(7)
+    > span.cm-header.cm-header-3 {
+    color: #888;
+    opacity: 0.7;
+  }
+}
+
+/* 終了タスク */
 .contains-task-list:has(.is-checked) {
   display: flex;
   flex-direction: column-reverse;
@@ -63,7 +81,8 @@ div.status-bar
     gap: 0;
   }
 
-  .task-done {
+  .task-done,
+  .task-due {
     font-size: 0.6rem;
     color: #fff;
     opacity: 0.45;

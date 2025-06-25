@@ -1,21 +1,16 @@
 
-
----
-
-<h2 style="color: #ee99ff;font-size:1.2rem">Todo</h2>
-
+<p class="todo-list" data-readme="スタイル用のフラグとして使っている"></p>
+### 未済
 ```tasks
-tag includes #todo
 not done
+path includes Todo
 ```
 
-
 ---
-<h2 style="color: #555;font-size:1.2rem">済</h2>
-
+###  済
 ```tasks
-tag includes #todo
+done
+path includes Todo
 sort by done reverse
 ```
 
----
