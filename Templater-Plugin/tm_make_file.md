@@ -9,13 +9,14 @@
 
 
 // フォルダ選択
-const [MEMO, DEV, SHOPPING, TODO] = ["MEMO", "DEV", "SHOPPING", "TODO"];
+const [MEMO, DEV, SHOPPING, TODO, ENGLISH] = ["MEMO", "DEV", "SHOPPING", "TODO", "ENGLISH"];
 
 const folderMap = {
   "買い物": {type: SHOPPING, dir:"310-Shopping"},
   "TODO": {type: TODO, dir:"320-Todo"},
   "メモ": {type: MEMO, dir:"100-Memo"},
   "開発": {type: DEV, dir:"200-Develop"},  
+  "英語": {type: ENGLISH, dir:"400-English"},
 };
 
 const selectedCategory = await tp.system.suggester(Object.keys(folderMap), Object.keys(folderMap));
@@ -64,6 +65,28 @@ output = `- [ ] ${userTitle} 🛫 ${now} 📅 ${due}
 
 ## メモ
 
+`;
+} else if(type === ENGLISH) {
+output = `---
+aliases:
+  - 
+tags: 
+  - 英語
+created:
+  - ${timestamp}
+---
+
+# ${userTitle}
+
+## sentence
+- sentence1
+
+## memo
+- memo１
+
+## word
+- word1
+ 
 `;
 }
 
