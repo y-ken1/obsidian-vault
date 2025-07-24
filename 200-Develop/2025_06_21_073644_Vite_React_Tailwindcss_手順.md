@@ -31,7 +31,7 @@ npm install tailwindcss @tailwindcss/vite
 ```
 
 ## vite.config.tsの編集（なければファイルを作る）
-
+		
 vite.config.ts
 ```TypeScript
 import { defineConfig } from "vite";
@@ -42,6 +42,22 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
 });
 ```
+
+
+## vite.config.tsの編集（サブフォルダの場合）
+		
+vite.config.ts
+```TypeScript
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  base: "/hoge/", // ← サブフォルダを指定
+  plugins: [react(), tailwindcss()],
+});
+```
+
 
 ## index.cssの編集
 
