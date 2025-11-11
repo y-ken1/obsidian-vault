@@ -16,6 +16,30 @@ created:
   - 2025-06-21 07:36:44
 ---
 
+### ボイラーテンプレートから
+
+```bash
+git clone https://github.com/y-ken1/boilerplate-react.git <プロジェクト名>
+
+# プロジェクトフォルダに移動
+cd <プロジェクト名>
+
+# ボイラーテンプレートのgitを削除
+rm -rf .git
+
+# git初期化
+git init
+
+# パッケージインストール
+npm install
+
+# ローカルサーバ実行
+npm run dev
+```
+
+
+### 以下はボイラーテンプレートを使わない方法
+
 ## ViteをReactで作成
 
 ```bash
